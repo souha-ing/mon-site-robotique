@@ -10,13 +10,79 @@ body {
   direction: ltr;
 }
 
+/* Navbar */
+.navbar {
+  width: 100%;
+  padding: 15px 40px;
+  background-color: #6a0572;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffd6ec;
+}
+
+/* Main title */
 .main-title {
   font-size: 2.5rem;
   font-weight: bold;
-  margin: 40px 0 20px;
+  margin: 40px 0 10px;
   color: #6a0572;
   text-shadow: 2px 2px #ffb3c6;
   animation: shine 2s infinite alternate;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.btn-container {
+  margin: 20px;
+}
+
+.main-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #ff70a6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: #ff5c98;
 }
 
 @keyframes shine {
@@ -24,6 +90,7 @@ body {
   to { text-shadow: 4px 4px #ffc8dd; }
 }
 
+/* Lang welcome cards */
 .welcome-container {
   display: flex;
   flex-wrap: wrap;
@@ -46,3 +113,4 @@ body {
 .lang:hover {
   transform: scale(1.05);
 }
+
