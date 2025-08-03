@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #fdf0f0, #dafefb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  direction: ltr;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  color: #6a0572;
+  text-shadow: 2px 2px #ffb3c6;
+  animation: shine 2s infinite alternate;
+}
+
+@keyframes shine {
+  from { text-shadow: 2px 2px #ffb3c6; }
+  to { text-shadow: 4px 4px #ffc8dd; }
+}
+
+.welcome-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.lang {
+  padding: 18px 24px;
+  border-radius: 15px;
+  color: #3d3d3d;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.lang:hover {
+  transform: scale(1.05);
+}
