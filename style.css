@@ -1,31 +1,23 @@
-/* Reset de base */
-* {
+/* إعداد عام */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
 }
 
-/* Couleurs principales */
-:root {
-  --primary-color: #0077b6;
-  --secondary-color: #f1f1f1;
-  --text-color: #222;
-  --light-text: #666;
-}
-
-/* Navbar */
+/* شريط التنقل */
 .navbar {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #14213d;
+  padding: 10px 20px;
+  color: white;
 }
 
-.navbar .logo {
-  font-size: 1.5em;
+.logo {
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -35,112 +27,71 @@
   gap: 20px;
 }
 
-.navbar a {
+.navbar ul li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
 
-.navbar a:hover {
+.navbar ul li a:hover {
   text-decoration: underline;
 }
 
-/* Accueil */
+/* زر إنشاء حساب */
+.btn-signup {
+  background-color: #fca311;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-signup:hover {
+  background-color: #ffba2f;
+}
+
+/* اختيار اللغة */
+.lang-select {
+  margin-left: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* قسم البطل */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
 .main-title {
-  font-size: 2.8em;
-  margin: 50px 0 10px;
-  text-align: center;
-  color: var(--text-color);
+  font-size: 36px;
+  color: #14213d;
 }
 
-.subtitle {
-  font-size: 1.3em;
-  text-align: center;
-  margin-bottom: 20px;
-  color: var(--light-text);
+.description {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* Bouton */
-.btn-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
+/* زر رئيسي */
 .main-btn {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: var(--primary-color);
+  margin-top: 30px;
+  background-color: #14213d;
   color: white;
-  text-decoration: none;
+  padding: 12px 24px;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
 }
 
 .main-btn:hover {
-  background-color: #023e8a;
-}
-
-/* Bienvenue en plusieurs langues */
-.welcome-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  padding: 30px 10px;
-}
-
-.lang {
-  padding: 10px 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  font-size: 1em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Section À propos */
-#apropos {
-  background-color: #f8f9fa;
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#apropos h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: var(--primary-color);
-}
-
-#apropos p {
-  font-size: 1.1em;
-  max-width: 700px;
-  margin: auto;
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .main-title {
-    font-size: 2em;
-  }
-
-  .main-btn {
-    width: 80%;
-  }
-
-  .lang {
-    font-size: 0.9em;
-  }
+  background-color: #1c2b4a;
 }
 
