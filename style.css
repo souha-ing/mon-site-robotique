@@ -1,134 +1,100 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Global Reset */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f7fa;
-  color: #333;
+  box-sizing: border-box;
 }
 
-/* Navbar */
+/* Main Colors */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0a2540;
-  color: white;
-  padding: 10px 30px;
+  background-color: #111;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #e60000;
 }
 
-.navbar ul {
+.navbar nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
-.navbar ul li a {
-  text-decoration: none;
+.navbar nav ul li a {
   color: white;
-  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #e60000;
 }
 
 .lang-select {
-  padding: 5px;
   margin-left: 20px;
-  border-radius: 5px;
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #e60000;
+  border-radius: 4px;
 }
 
 .btn-signup {
-  background-color: #00bcd4;
+  margin-left: 20px;
   padding: 8px 16px;
+  background-color: #e60000;
   color: white;
+  border-radius: 5px;
   text-decoration: none;
-  border-radius: 20px;
   font-weight: bold;
 }
 
 /* Hero Section */
 .hero {
-  padding: 80px 30px;
   text-align: center;
-  background: linear-gradient(to right, #e0f7fa, #f4f7fa);
+  padding: 80px 20px;
+  background-color: #111;
 }
 
 .main-title {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #0a2540;
+  color: #e60000;
 }
 
 .description {
   font-size: 18px;
-  margin-bottom: 30px;
-  color: #444;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
 }
 
 .main-btn {
-  background-color: #00bcd4;
+  background-color: #e60000;
   padding: 12px 24px;
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-/* Our Team Section */
-.team {
-  background-color: #ffffff;
-  padding: 60px 30px;
-  text-align: center;
+.main-btn:hover {
+  background-color: #cc0000;
 }
-
-.team h2 {
-  font-size: 30px;
-  color: #0a2540;
-  margin-bottom: 20px;
-}
-
-.team-members {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 30px;
-}
-
-.member {
-  background-color: #f0f4f8;
-  padding: 20px;
-  border-radius: 12px;
-  width: 180px;
-}
-
-.member h3 {
-  margin: 0;
-  color: #0077b6;
-}
-
-/* Proposals Section */
-.proposals {
-  background-color: #eef6f9;
-  padding: 50px 30px;
-  text-align: center;
-}
-
-.proposals h2 {
-  font-size: 30px;
-  color: #0a2540;
-  margin-bottom: 20px;
-}
-
-.proposals ul {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  color: #333;
-}
-
-.proposals ul li {
-  margin: 10px 0;
-}
-
