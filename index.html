@@ -8,73 +8,43 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation bar -->
   <header class="navbar">
-    <div class="logo">Dextro 🤖</div>
+    <div class="logo" data-key="home">Dextro 🤖</div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Our Team</a></li>
-        <li><a href="#">Why Dextro?</a></li>
+        <li><a href="#" data-key="home">Home</a></li>
+        <li><a href="#" data-key="products">Products</a></li>
+        <li><a href="#" data-key="about">About</a></li>
+        <li><a href="#" data-key="contact">Contact</a></li>
+        <li><a href="#" data-key="study">Study</a></li>
+        <li><a href="#" data-key="team">Our Team</a></li>
+        <li><a href="#" data-key="propose">Propose</a></li>
       </ul>
     </nav>
 
-    <!-- Language Selector -->
-    <select class="lang-select">
+    <!-- Language selector -->
+    <select class="lang-select" onchange="changeLanguage(this.value)">
       <option value="en">🇬🇧 EN</option>
       <option value="fr">🇫🇷 FR</option>
-      <option value="es">🇪🇸 ES</option>
       <option value="ar">🇸🇦 AR</option>
     </select>
 
-    <!-- Sign Up Button -->
-    <a href="#" class="btn-signup">Create Account</a>
+    <!-- Create Account Button -->
+    <a href="#" class="btn-signup" data-key="createAccount">Create Account</a>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1 class="main-title">Where Education Meets Industrial Innovation</h1>
-    <p class="description">
-      For industries, Dextro cobots automate manufacturing, quality control, and packaging processes.<br>
-      For educators, they offer a simple way to train tomorrow’s engineers using industrial-grade robots.
+    <h1 class="main-title" data-key="heroTitle">Where Education Meets Industrial Innovation</h1>
+    <p class="description" data-key="heroText">
+      For industries, Dextro cobots automate manufacturing, quality control, and packaging processes. 
+      For educators, they train tomorrow's engineers with industrial-grade robots.
     </p>
-    <a href="#" class="main-btn">Explore Our Products</a>
+    <a href="#" class="main-btn" data-key="seeProducts">See our products</a>
   </section>
 
-  <!-- Our Team Section -->
-  <section class="team">
-    <h2>Meet Our Team</h2>
-    <p>We are a group of passionate engineers, educators, and visionaries working to build the future of robotics.</p>
-    <div class="team-members">
-      <div class="member">
-        <h3>Sarah</h3>
-        <p>Lead Engineer</p>
-      </div>
-      <div class="member">
-        <h3>Alex</h3>
-        <p>Product Manager</p>
-      </div>
-      <div class="member">
-        <h3>Lina</h3>
-        <p>Education Specialist</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proposals Section -->
-  <section class="proposals">
-    <h2>Why Choose Dextro?</h2>
-    <ul>
-      <li>✅ Industrial-grade robots with educational focus</li>
-      <li>✅ Easy integration into classrooms and factories</li>
-      <li>✅ Simple, powerful and affordable</li>
-      <li>✅ Passionate and experienced team</li>
-    </ul>
-  </section>
-
+  <!-- Link to lang.js -->
+  <script src="lang.js"></script>
 </body>
 </html>
