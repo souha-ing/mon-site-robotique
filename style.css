@@ -1,19 +1,19 @@
-/* إعداد عام */
 body {
-  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fa;
   color: #333;
 }
 
-/* شريط التنقل */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #14213d;
-  padding: 10px 20px;
+  background-color: #0a2540;
   color: white;
+  padding: 10px 30px;
 }
 
 .logo {
@@ -28,70 +28,107 @@ body {
 }
 
 .navbar ul li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-weight: 500;
 }
 
-.navbar ul li a:hover {
-  text-decoration: underline;
+.lang-select {
+  padding: 5px;
+  margin-left: 20px;
+  border-radius: 5px;
 }
 
-/* زر إنشاء حساب */
 .btn-signup {
-  background-color: #fca311;
-  color: white;
+  background-color: #00bcd4;
   padding: 8px 16px;
+  color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
 }
 
-.btn-signup:hover {
-  background-color: #ffba2f;
-}
-
-/* اختيار اللغة */
-.lang-select {
-  margin-left: 15px;
-  padding: 5px;
-  border-radius: 5px;
-  border: none;
-}
-
-/* قسم البطل */
+/* Hero Section */
 .hero {
+  padding: 80px 30px;
   text-align: center;
-  padding: 80px 20px;
+  background: linear-gradient(to right, #e0f7fa, #f4f7fa);
 }
 
 .main-title {
   font-size: 36px;
-  color: #14213d;
+  margin-bottom: 20px;
+  color: #0a2540;
 }
 
 .description {
   font-size: 18px;
-  color: #555;
-  margin-top: 20px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: 30px;
+  color: #444;
 }
 
-/* زر رئيسي */
 .main-btn {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #14213d;
-  color: white;
+  background-color: #00bcd4;
   padding: 12px 24px;
-  border-radius: 8px;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  border-radius: 8px;
+  font-size: 16px;
 }
 
-.main-btn:hover {
-  background-color: #1c2b4a;
+/* Our Team Section */
+.team {
+  background-color: #ffffff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.team h2 {
+  font-size: 30px;
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.member {
+  background-color: #f0f4f8;
+  padding: 20px;
+  border-radius: 12px;
+  width: 180px;
+}
+
+.member h3 {
+  margin: 0;
+  color: #0077b6;
+}
+
+/* Proposals Section */
+.proposals {
+  background-color: #eef6f9;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.proposals h2 {
+  font-size: 30px;
+  color: #0a2540;
+  margin-bottom: 20px;
+}
+
+.proposals ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.proposals ul li {
+  margin: 10px 0;
 }
 
