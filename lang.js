@@ -12,6 +12,11 @@ const translations = {
     heroText:
       "For industries, Dextro cobots automate manufacturing, quality control, and packaging processes. For educators, they train tomorrow's engineers with industrial-grade robots.",
     seeProducts: "See our products",
+    educationTitle: "Dextro for Education",
+    robotEdu: "4-DOF Educational Robot",
+    simulator: "3D Learning Simulator",
+    kits: "Educational Kits",
+    training: "Online Training"
   },
   fr: {
     home: "Accueil",
@@ -26,6 +31,11 @@ const translations = {
     heroText:
       "Pour les industriels, les cobots Dextro automatisent les processus de fabrication, de contrôle qualité et de conditionnement. Pour les enseignants, ils forment les ingénieurs de demain avec des robots de qualité industrielle.",
     seeProducts: "Voir nos produits",
+    educationTitle: "Dextro pour l’éducation",
+    robotEdu: "Robot éducatif 4 DDL",
+    simulator: "Simulateur 3D pour l'apprentissage",
+    kits: "Kits pédagogiques",
+    training: "Formation en ligne"
   },
   ar: {
     home: "الرئيسية",
@@ -40,6 +50,11 @@ const translations = {
     heroText:
       "بالنسبة للصناعة، تقوم روبوتات ديكسترو بأتمتة عمليات التصنيع ومراقبة الجودة والتغليف. أما للمعلمين، فهي تساهم في تكوين مهندسي المستقبل باستخدام روبوتات بجودة صناعية.",
     seeProducts: "عرض منتجاتنا",
+    educationTitle: "ديكسترو للتعليم",
+    robotEdu: "روبوت تعليمي بأربع درجات",
+    simulator: "محاكي ثلاثي الأبعاد للتعلم",
+    kits: "عدة تعليمية",
+    training: "تدريب عبر الإنترنت"
   },
 };
 

@@ -3,19 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Products | Dextro</title>
+  <title>Products - Dextro</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="lang.js" defer></script>
+  
 </head>
 <body>
-  <div class="page-container">
-    <!-- Flèche de retour -->
-    <a href="index.html" class="back-arrow">← Back to Home</a>
 
-    <!-- Titre -->
-    <h1 class="page-title">Our Products</h1>
+  <!-- Navigation bar -->
+  <header class="navbar">
+    <div class="logo" data-key="dextro">Dextro 🤖</div>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-key="home">Home</a></li>
+        <li><a href="products.html" data-key="products">Products</a></li>
+        <li><a href="about.html" data-key="about">About</a></li>
+        <li><a href="contact.html" data-key="contact">Contact</a></li>
+        <li><a href="team.html" data-key="team">Our Team</a></li>
+        <li><a href="propose.html" data-key="propose">Propose</a></li>
+      </ul>
+    </nav>
 
-    <!-- Contenu -->
-    <p class="page-text">Here you'll find all our industrial and educational robots.</p>
-  </div>
+    <select class="lang-select" onchange="changeLanguage(this.value)">
+      <option value="en">🇬🇧 EN</option>
+      <option value="fr">🇫🇷 FR</option>
+      <option value="ar">🇸🇦 AR</option>
+    </select>
+
+    <a href="signup.html" class="btn-signup" data-key="createAccount">Create Account</a>
+  </header>
+
+  <!-- Main Content -->
+  <main class="products-page">
+    <h1 class="main-title" data-key="products">Products</h1>
+
+    <section class="product-section">
+      <h2 class="section-title" data-key="educationTitle">Dextro for Education</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <h3 data-key="robotEdu">4-DOF Educational Robot</h3>
+          <p>Train students on real industrial robotic arms.</p>
+        </div>
+        <div class="product-item">
+          <h3 data-key="simulator">3D Learning Simulator</h3>
+          <p>Practice robotics and automation in a virtual environment.</p>
+        </div>
+        <div class="product-item">
+          <h3 data-key="kits">Educational Kits</h3>
+          <p>Hands-on kits to teach control systems and sensors.</p>
+        </div>
+        <div class="product-item">
+          <h3 data-key="training">Online Training</h3>
+          <p>Step-by-step video courses for students and teachers.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>
+
