@@ -5,42 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dextro 🤖</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="lang.js" defer></script>
 </head>
 <body>
 
   <!-- Navigation bar -->
   <header class="navbar">
-    <div class="logo" data-key="dextro">Dextro 🤖</div>
+    <div class="logo">Dextro 🤖</div>
     <nav>
-      <ul>
-        <li><a href="products.html" data-key="products">Products</a></li>
-        <li><a href="about.html" data-key="about">About</a></li>
-        <li><a href="contact.html" data-key="contact">Contact</a></li>
-        <li><a href="team.html" data-key="team">Our Team</a></li>
-        <li><a href="propose.html" data-key="propose">Propose</a></li>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-    <!-- Language selector -->
-    <select class="lang-select" onchange="changeLanguage(this.value)">
-      <option value="en">🇬🇧 EN</option>
-      <option value="fr">🇫🇷 FR</option>
-      <option value="ar">🇸🇦 AR</option>
-    </select>
-
-    <!-- Create Account Button -->
-    <a href="signup.html" class="btn-signup" data-key="createAccount">Create Account</a>
+    <div class="nav-buttons">
+      <button class="lang-btn">🌐 EN/FR</button>
+      <button class="join-btn">Join Us</button>
+    </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1 class="main-title" data-key="heroTitle">Where Education Meets Industrial Innovation</h1>
-    <p class="description" data-key="heroText">
-      For industries, Dextro cobots automate manufacturing, quality control, and packaging processes. 
-      For educators, they train tomorrow's engineers with industrial-grade robots.
-    </p>
-    <a href="products.html" class="main-btn" data-key="seeProducts">See our products</a>
+    <img src="images/robot.jpg" alt="Company Robot" class="hero-img">
+    <h1 class="hero-text">Welcome to our company</h1>
   </section>
 
 </body>
