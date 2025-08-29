@@ -45,7 +45,14 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-
+/* Logo Glowy */
+.glow-logo {
+  color: #fff;
+  text-shadow: 
+    0 0 8px #e60000, 
+    0 0 16px #ff1a1a, 
+    0 0 24px #ff3333;
+}
 .nav-links {
   list-style: none;
   display: flex;
