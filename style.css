@@ -92,3 +92,33 @@ body {
   margin-top: 10px;
   color: #e60000;
 }
+
+/* Video Section */
+.video-section {
+  margin: 60px auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 20px;
+}
+
+.intro-text {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.video-container {
+  margin: 20px 0;
+}
+.video-container video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #e60000;
+}
+
+.collab-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
