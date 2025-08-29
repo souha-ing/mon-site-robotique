@@ -1,159 +1,183 @@
 /* Reset */
-body {
+* {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #000;
-  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Top bar */
+/* --- Topbar --- */
 .topbar {
-  background-color: #111;
-  padding: 10px;
+  background: #111;
+  padding: 10px 20px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
-.top-buttons button {
-  margin-left: 10px;
-  background: #e60000;
-  color: white;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
+.top-buttons {
+  display: flex;
+  gap: 12px;
 }
-.top-buttons button:hover {
-  background: #ff1a1a;
-}
-/* Dropdown langues */
+
+/* --- Lang Switcher --- */
 .dropdown {
   position: relative;
   display: inline-block;
 }
+
+.lang-btn {
+  background: linear-gradient(45deg, #1a1a1a, #333);
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+  background: linear-gradient(45deg, #444, #666);
+  transform: scale(1.05);
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0;
-  background-color: #1a1a1a;
-  min-width: 120px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
-  border-radius: 6px;
+  background-color: #222;
+  min-width: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
   z-index: 1;
 }
+
 .dropdown-content a {
-  color: white;
-  padding: 10px 12px;
+  color: #fff;
+  padding: 12px 16px;
   text-decoration: none;
   display: block;
   transition: 0.3s;
 }
+
 .dropdown-content a:hover {
-  background-color: #e60000;
+  background: #444;
+  padding-left: 22px;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Navbar */
+/* --- Buttons --- */
+.connect-btn,
+.review-btn,
+.cart-btn {
+  background: #0077ff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover,
+.review-btn:hover,
+.cart-btn:hover {
+  background: #005fcc;
+  transform: scale(1.05);
+}
+
+/* --- Navbar --- */
 .navbar {
-  background-color: #1a1a1a;
+  background: #222;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
+  padding: 14px 20px;
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: bold;
-  color: #e60000;
-  font-family: 'Verdana', sans-serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
 }
-/* Logo Glowy */
-.glow-logo {
-  color: #fff;
-  text-shadow: 
-    0 0 8px #e60000, 
-    0 0 16px #ff1a1a, 
-    0 0 24px #ff3333;
-}
+
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
+
 .nav-links a {
+  color: white;
   text-decoration: none;
-  color: white;
-  transition: 0.3s;
+  font-size: 16px;
 }
+
 .nav-links a:hover {
-  color: #e60000;
+  color: #00c3ff;
 }
 
-/* Cart button */
-.cart-btn {
-  background: #e60000;
-  color: white;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.cart-btn:hover {
-  background: #ff1a1a;
-}
-
-/* Hero */
+/* --- Hero Section --- */
 .hero {
+  background: linear-gradient(to right, #1a1a1a, #333);
+  color: white;
   text-align: center;
-  margin-top: 60px;
+  padding: 80px 20px;
 }
 
 .glow-text {
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 10px #e60000, 0 0 20px #ff1a1a, 0 0 30px #ff3333;
+  font-size: 36px;
+  text-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff;
 }
 
 .slogan {
   font-size: 20px;
   margin-top: 10px;
-  color: #e60000;
 }
 
-/* Video Section */
-.video-section {
-  margin: 60px auto;
+/* --- Education Section --- */
+.education {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.container {
   max-width: 900px;
-  text-align: center;
-  padding: 20px;
+  margin: auto;
 }
 
 .intro-text {
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 20px;
-  color: #fff;
+  color: #333;
 }
 
 .video-container {
+  display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
+
 .video-container video {
-  width: 100%;
+  max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 20px #e60000;
 }
 
-.collab-text {
+.edu-text {
   margin-top: 20px;
-  font-size: 18px;
+}
+
+.edu-text h2 {
+  color: #0077ff;
+  margin-bottom: 10px;
+}
+
+.edu-text p {
+  font-size: 16px;
+  color: #444;
   line-height: 1.6;
-  color: #ccc;
 }
