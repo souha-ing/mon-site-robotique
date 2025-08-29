@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>armbot</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>ArmBot 🤖</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="lang.js" defer></script>
 </head>
 <body>
 
-  <!-- Navigation bar -->
-  <header class="navbar">
-    <div class="logo">armbot</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#products">Product</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-buttons">
-      <button class="lang-btn">EN/FR</button>
-      <button class="join-btn">Join Us</button>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')">English</button>
+      <button onclick="setLanguage('fr')">Français</button>
+      <button onclick="setLanguage('ar')">العربية</button>
     </div>
+    <div class="top-buttons">
+      <button class="login-btn" data-key="login">Login</button>
+      <button class="review-btn" data-key="review">Add Review</button>
+    </div>
+  </div>
+
+  <!-- Main navbar -->
+  <header class="navbar">
+    <div class="logo">ArmBot</div>
+    <ul class="nav-links">
+      <li><a href="#" data-key="products">Products</a></li>
+      <li><a href="#" data-key="education">Education</a></li>
+      <li><a href="#" data-key="about">About</a></li>
+    </ul>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero section -->
   <section class="hero">
-    <img src="images/logo.jpg" alt="Logo du site" width="150">
-    <h1 class="hero-text">Welcome to our company</h1>
+    <h1 class="hero-title" data-key="welcome">Welcome in our company</h1>
+    <button class="cart-btn">
+      🛒 <span data-key="addtocart">Add to Cart</span>
+    </button>
+    <p class="hero-subtitle" data-key="slogan">
+      Des robots simples et performants pour l’éducation
+    </p>
   </section>
 
 </body>
