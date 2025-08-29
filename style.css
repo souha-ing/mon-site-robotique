@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #000000;
   color: #111;
 }
 
@@ -116,9 +116,11 @@ body {
   color: rgb(0, 0, 0);
 }
 
+.glow-logo, 
 .glow-text {
-  font-size: 36px;
-  text-shadow: 0 0 10px #e60000, 0 0 20px #ff3333;
+  color: #ff0000; /* Rouge */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ffffff, 0 0 30px #000000;
+
 }
 
 .slogan {
