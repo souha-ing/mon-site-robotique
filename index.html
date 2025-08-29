@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ArmBot</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Icons (for globe & cart) -->
+  <!-- Font Awesome pour l’icône globe -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <script src="lang.js" defer></script>
 </head>
 <body>
 
-  <!-- Top bar -->
+  <!-- Barre du haut -->
   <header class="topbar">
     <div class="top-buttons">
-      <!-- Bouton langue -->
+      <!-- Sélecteur de langue -->
       <div class="dropdown">
-        <button class="lang-btn"><i class="fa-solid fa-globe"></i> 🌍</button>
+        <button class="lang-btn"><i class="fa-solid fa-globe"></i></button>
         <div class="dropdown-content">
-          <a href="ar.html">🇸🇦 العربية</a>
-          <a href="fr.html">🇫🇷 Français</a>
-          <a href="en.html">🇬🇧 English</a>
+          <button onclick="changeLang('fr')">🇫🇷 Français</button>
+          <button onclick="changeLang('en')">🇬🇧 English</button>
+          <button onclick="changeLang('ar')">🇸🇦 العربية</button>
         </div>
       </div>
 
@@ -28,33 +29,33 @@
     </div>
   </header>
 
-  <!-- Navigation bar -->
+  <!-- Barre de navigation -->
   <header class="navbar">
-    <div class="logo glow-logo">armbot</div>
+    <div class="logo glow-logo" id="logo">ArmBot</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#products"><b>Products</b></a></li>
-        <li><a href="#education"><b>Education</b></a></li>
-        <li><a href="#about"><b>About Us</b></a></li>
+        <li><a href="#products" id="nav-products"><b>Products</b></a></li>
+        <li><a href="#education" id="nav-education"><b>Education</b></a></li>
+        <li><a href="#about" id="nav-about"><b>About Us</b></a></li>
       </ul>
     </nav>
     <div class="cart">
-      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-text">Add to Cart</span></button>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <h1 class="glow-text">Welcome to our company</h1>
-    <p class="slogan"><b>Simple and powerful robots for education</b></p>
+    <h1 class="glow-text" id="hero-title">Welcome to our company</h1>
+    <p class="slogan" id="hero-slogan"><b>Simple and powerful robots for education</b></p>
   </section>
 
-  <!-- Education Section -->
+  <!-- Section Education -->
   <section class="education" id="education">
     <div class="container">
 
-      <!-- Première phrase -->
-      <p class="intro-text">
+      <!-- Intro -->
+      <p class="intro-text" id="edu-intro">
         For teachers, they make it easy to train the engineers of tomorrow with industrial-grade robots.
       </p>
 
@@ -66,10 +67,10 @@
         </video>
       </div>
 
-      <!-- Texte après la vidéo -->
+      <!-- Texte après vidéo -->
       <div class="edu-text">
-        <h2>Collaborative robots for all your needs</h2>
-        <p>
+        <h2 id="edu-title">Collaborative robots for all your needs</h2>
+        <p id="edu-desc">
           ArmBot robots are 4-axis robotic arms designed to efficiently automate repetitive and low value-added tasks.  
           Compact and intuitive, they can be quickly integrated into any industrial or educational environment.  
           Their highly accessible software and compatibility with numerous accessories enable flexible and scalable automation, as well as effective learning.
@@ -78,5 +79,6 @@
 
     </div>
   </section>
+
 </body>
 </html>
