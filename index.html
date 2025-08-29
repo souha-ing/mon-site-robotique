@@ -1,46 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ArmBot 🤖</title>
-  <link rel="stylesheet" href="style.css"/>
-  <script src="lang.js" defer></script>
+  <title>ArmBot</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Icons (for globe & cart) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Top bar -->
-  <div class="topbar">
-    <div class="lang-switch">
-      <button onclick="setLanguage('en')">English</button>
-      <button onclick="setLanguage('fr')">Français</button>
-      <button onclick="setLanguage('ar')">العربية</button>
-    </div>
+  <header class="topbar">
     <div class="top-buttons">
-      <button class="login-btn" data-key="login">Login</button>
-      <button class="review-btn" data-key="review">Add Review</button>
+      <button class="lang-btn"><i class="fa-solid fa-globe"></i></button>
+      <button class="connect-btn">Connect</button>
+      <button class="review-btn">+ Add Review</button>
     </div>
-  </div>
-
-  <!-- Main navbar -->
-  <header class="navbar">
-    <div class="logo">ArmBot</div>
-    <ul class="nav-links">
-      <li><a href="#" data-key="products">Products</a></li>
-      <li><a href="#" data-key="education">Education</a></li>
-      <li><a href="#" data-key="about">About</a></li>
-    </ul>
   </header>
 
-  <!-- Hero section -->
+  <!-- Navigation bar -->
+  <header class="navbar">
+    <div class="logo">armbot</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#products"><b>Products</b></a></li>
+        <li><a href="#education"><b>Education</b></a></li>
+        <li><a href="#about"><b>About Us</b></a></li>
+      </ul>
+    </nav>
+    <div class="cart">
+      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <h1 class="hero-title" data-key="welcome">Welcome in our company</h1>
-    <button class="cart-btn">
-      🛒 <span data-key="addtocart">Add to Cart</span>
-    </button>
-    <p class="hero-subtitle" data-key="slogan">
-      Des robots simples et performants pour l’éducation
-    </p>
+    <h1 class="glow-text">Welcome to our company</h1>
+    <p class="slogan"><b>Simple and powerful robots for education</b></p>
   </section>
 
 </body>
