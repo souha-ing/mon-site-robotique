@@ -78,9 +78,18 @@ body {
 }
 
 .logo {
-  font-size: 26px;
+  display: flex;
+  align-items: center;
+  font-size: 28px;
   font-weight: bold;
-  color: #e60000;
+  color: white;
+}
+
+.logo-icon {
+  width: 40px;   /* Taille du logo PNG */
+  height: auto;
+  margin-right: 10px;
+
 }
 
 .nav-links {
