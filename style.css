@@ -80,13 +80,13 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 60px;
+  font-size: 28px;
   font-weight: bold;
   color: white;
 }
 
 .logo-icon {
-  width: 40px;   /* Taille du logo PNG */
+  width: 28px;   /* Taille du logo PNG */
   height: auto;
   margin-right: 10px;
 
@@ -128,7 +128,7 @@ body {
 .glow-logo, 
 .glow-text
  {
-  font-size: 60px; /* change la valeur selon la taille que tu veux */
+  font-size: 40px; /* change la valeur selon la taille que tu veux */
   font-weight: bold;
   color: #ff0000; 
   text-shadow: 0 0 10px #ff0000, 0 0 20px #ffffff, 0 0 30px #000000;
