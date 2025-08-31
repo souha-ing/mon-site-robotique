@@ -80,7 +80,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
-  font-size: 28px;
+  font-size: 60px;
   font-weight: bold;
   color: white;
 }
