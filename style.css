@@ -128,7 +128,7 @@ body {
 .glow-logo, 
 .glow-text {
   .glow-text {
-  font-size: 150px; /* change la valeur selon la taille que tu veux */
+  font-size: 60px; /* change la valeur selon la taille que tu veux */
   font-weight: bold;
   color: #ff0000; 
   text-shadow: 0 0 10px #ff0000, 0 0 20px #ffffff, 0 0 30px #000000;
