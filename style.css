@@ -138,41 +138,6 @@ body {
   margin-top: 10px;
 }
 
-/* === Glow + Jump Animation === */
-.glow-jump {
-  font-family: Verdana, sans-serif;
-  font-size: 50px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
-
-  animation: glow 2s ease-in-out infinite alternate,
-             jump 1s ease infinite;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 5px #fff,
-                 0 0 10px #e60000,
-                 0 0 20px #e60000,
-                 0 0 30px #ff0000;
-  }
-  to {
-    text-shadow: 0 0 10px #fff,
-                 0 0 20px #ff0000,
-                 0 0 30px #e60000,
-                 0 0 40px #ff1a1a;
-  }
-}
-
-@keyframes jump {
-  0%   { transform: translateY(0); }
-  30%  { transform: translateY(-30px); }
-  50%  { transform: translateY(0); }
-  70%  { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
-
 /* Education */
 .education {
   padding: 40px 20px;
