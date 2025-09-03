@@ -4,7 +4,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #000000;
   color: #ffffff;
-  font-size: 18px; /* ← ici tu changes la taille générale */
+  font-size: 18px; /* taille générale */
 }
 
 /* Topbar */
@@ -90,7 +90,6 @@ body {
   width: 28px;   /* Taille du logo PNG */
   height: auto;
   margin-right: 10px;
-
 }
 
 .nav-links {
@@ -128,7 +127,7 @@ body {
 
 .glow-logo, 
 .glow-text {
-  font-size: 40px; /* change la valeur selon la taille que tu veux */
+  font-size: 40px; 
   font-weight: bold;
   color: #ff0000; 
   text-shadow: 0 0 10px #ff0000, 0 0 20px #ffffff, 0 0 30px #000000;
@@ -192,4 +191,13 @@ video {
 
 .edu-text {
   margin-top: 20px;
+}
+
+/* === Style des phrases de présentation === */
+.intro-text p {
+  font-size: 28px;   /* plus grand */
+  font-weight: bold; /* gras */
+  text-align: left;  /* aligné à gauche */
+  margin: 12px 0;    /* espace entre les phrases */
+  line-height: 1.8;  /* espacement entre lignes */
 }
