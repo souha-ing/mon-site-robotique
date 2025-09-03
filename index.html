@@ -1,84 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BoneMinde</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome pour l’icône globe -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <script src="lang.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BoneMind</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Barre du haut -->
-  <header class="topbar">
-    <div class="top-buttons">
-      <!-- Sélecteur de langue -->
-      <div class="dropdown">
-        <button class="lang-btn"><i class="fa-solid fa-globe"></i></button>
-        <div class="dropdown-content">
-          <button onclick="changeLang('fr')">🇫🇷 Français</button>
-          <button onclick="changeLang('en')">🇬🇧 English</button>
-          <button onclick="changeLang('ar')">🇸🇦 العربية</button>
-        </div>
-      </div>
-
-      <button class="connect-btn">Connect</button>
-      <button class="review-btn">+ Add Review</button>
-    </div>
-  </header>
-
-  <!-- Barre de navigation -->
+  <!-- Navbar -->
   <header class="navbar">
-    <div class="logo glow-logo" id="logo">
-      <img src="images/BonMind.png" alt="BoneMinde">
-    </div>
+    <div class="company-name">BoneMind</div>
     <nav>
       <ul class="nav-links">
-        <li><a href="#products" id="nav-products"><b>Products</b></a></li>
-        <li><a href="#education" id="nav-education"><b>Education</b></a></li>
-        <li><a href="#about" id="nav-about"><b>About Us</b></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Join Us</a></li>
+        <li><a href="#">Add a Review</a></li>
+        <li><a href="#">🌍</a></li>
+        <li><a href="#">🛒</a></li>
       </ul>
     </nav>
-    <div class="cart">
-      <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> <span id="cart-text">Add to Cart</span></button>
-    </div>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1 class="glow-jump">BoneMinde robots:</h1>
-    <p class="slogan" id="hero-slogan"><b> tech with heart</b></p>
-  </section>
-
-  <!-- Section Education -->
-  <section class="education" id="education">
-    <div class="container">
-
-      <div class="intro-text" id="edu-intro">
-  <p>For teachers,</p>
-  <p>they make it easy</p>
-  <p>to train the engineers of tomorrow</p>
-  <p>with industrial-grade robots.</p>
-     </div>
-
-      <!-- Vidéo -->
-      <div class="video-container">
-        <video controls>
-          <source src="video.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <!-- Texte après vidéo -->
-      <div class="edu-text">
-        <h2 id="edu-title">Collaborative robots for all your needs</h2>
-        <p id="edu-desc">
-          BoneMinde robots are 4-axis robotic arms built to automate repetitive, low value-added tasks with efficiency. Compact and intuitive, they integrate seamlessly into both industrial and educational environments. With user-friendly software and wide accessory compatibility, they offer flexible, scalable automation and an effective learning experience.
-        </p>
-      </div>
-
+    <h1 class="hero-title">Tech with Heart </h1>
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support video.
+      </video>
     </div>
   </section>
 
