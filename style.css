@@ -3,99 +3,76 @@ body {
   margin: 0;
   font-family: Verdana, sans-serif;
   background-color: #000;
-  color: #fff;
+  color: #e60000; /* Texte rouge */
   font-size: 18px;
 }
 
 /* Navbar */
 .navbar {
   background: #000;
-  color: #fff;
-  padding: 10px 20px;
+  padding: 15px 20px;
   border-bottom: 2px solid #e60000;
-  display: flex;
-  flex-direction: column; /* Sépare top et bottom bar */
-}
-
-/* Ligne du haut : Nom + icônes */
-.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Nom de l'entreprise */
 .company-name {
   font-size: 28px;
   font-weight: bold;
-  color: #fff;
+  color: #e60000;
+  text-shadow: 0 0 10px #e60000, 0 0 20px #ff0000;
 }
 
-/* Icônes et boutons à droite */
-.top-links {
+/* Liens à droite */
+.right-links {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
-.top-links a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.top-links a:hover {
+.right-links a {
   color: #e60000;
+  text-decoration: none;
+  font-weight: bold;
   text-shadow: 0 0 8px #e60000;
 }
 
-/* Icônes globes et panier */
-.top-links i {
-  font-size: 20px;
-  cursor: pointer;
+.right-links a:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 15px #ff0000;
 }
 
-.top-links i:hover {
-  color: #e60000;
-  text-shadow: 0 0 10px #e60000;
-}
-
-/* Ligne du bas : navigation centrée */
-.bottom-bar {
-  margin-top: 10px;
+/* Menu centré en dessous */
+.menu {
   text-align: center;
+  background: #000;
+  padding: 12px;
+  border-bottom: 2px solid #e60000;
 }
 
-.bottom-bar a {
+.menu a {
   margin: 0 15px;
-  color: #ffffff;
+  color: #e60000;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 8px #e60000;
 }
 
-.bottom-bar a:hover {
-  color: #e60000;
-  text-shadow: 0 0 10px #e60000;
+.menu a:hover {
+  color: #ff1a1a;
+  text-shadow: 0 0 15px #ff0000;
 }
 
 /* Hero */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: #000;
-  color: #fff;
+  padding: 80px 20px;
 }
 
 .hero-title {
   font-size: 60px;
   font-weight: bold;
-  color: #fff;
-  text-shadow: 0 0 15px #e60000, 0 0 30px #e60000;
-  margin-bottom: 30px;
-}
-
-.video-container video {
-  width: 80%;
-  border: 3px solid #e60000;
-  border-radius: 10px;
+  color: #e60000;
+  text-shadow: 0 0 15px #e60000, 0 0 30px #ff0000, 0 0 50px #ff3333;
 }
