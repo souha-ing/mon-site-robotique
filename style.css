@@ -1,7 +1,7 @@
 /* Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Verdana, sans-serif;
   background-color: #000;
   color: #fff;
   font-size: 18px;
@@ -9,34 +9,73 @@ body {
 
 /* Navbar */
 .navbar {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-bottom: 2px solid #e60000;
+  display: flex;
+  flex-direction: column; /* Sépare top et bottom bar */
+}
+
+/* Ligne du haut : Nom + icônes */
+.top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
-  border-bottom: 2px solid #e60000;
-  background: #000;
 }
 
 .company-name {
   font-size: 28px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
-.nav-links {
-  list-style: none;
+/* Icônes et boutons à droite */
+.top-links {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
+.top-links a {
+  color: #fff;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
+.top-links a:hover {
   color: #e60000;
+  text-shadow: 0 0 8px #e60000;
+}
+
+/* Icônes globes et panier */
+.top-links i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.top-links i:hover {
+  color: #e60000;
+  text-shadow: 0 0 10px #e60000;
+}
+
+/* Ligne du bas : navigation centrée */
+.bottom-bar {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.bottom-bar a {
+  margin: 0 15px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.bottom-bar a:hover {
+  color: #e60000;
+  text-shadow: 0 0 10px #e60000;
 }
 
 /* Hero */
@@ -48,9 +87,10 @@ body {
 }
 
 .hero-title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
-  color: #ffffff; /* Rouge sans glow */
+  color: #fff;
+  text-shadow: 0 0 15px #e60000, 0 0 30px #e60000;
   margin-bottom: 30px;
 }
 
